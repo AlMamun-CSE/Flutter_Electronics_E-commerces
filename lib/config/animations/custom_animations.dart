@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/config/assets/asset.dart';
 import 'package:flutter_application_1/constants/app_constants.dart';
+import 'package:flutter_application_1/screens/home/widgets/custom_bottom_navigation_bar.dart';
 
 class CustomAnimation extends StatefulWidget {
   final Widget home;
@@ -60,6 +61,8 @@ class _CustomAnimationState extends State<CustomAnimation> {
                 ],
         ),
         body: widget.home,
+
+        bottomNavigationBar: CustomBottomNavigationBar(),
 
       ),
     );
