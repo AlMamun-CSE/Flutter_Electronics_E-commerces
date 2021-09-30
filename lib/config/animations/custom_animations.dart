@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/config/assets/asset.dart';
+import 'package:flutter_application_1/constants/app_constants.dart';
 
 class CustomAnimation extends StatefulWidget {
   final Widget home;
@@ -28,6 +29,7 @@ class _CustomAnimationState extends State<CustomAnimation> {
         ..rotateY(isDrawerOpen ? -0.5 : 0),
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: kPrimaryColor,
           elevation: 0.0,
           leading: isDrawerOpen
               ? IconButton(
